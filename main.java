@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
-public class MicrowaveTimeCalculator {
+public class main {
         public static void main(String[] args) {{
         // Constants
         final int SUB_TIME = 60;
         final int PIZZA_TIME = 45;
         final int SOUP_TIME = 105;
-        int totalTime = 0;
+        int totalTime = 1;
         // Input
         Scanner scanner = new Scanner(System.in);
         System.out.print("Are you heating sub, pizza, or soup? (lowercase): ");
@@ -26,13 +26,13 @@ public class MicrowaveTimeCalculator {
             // Process
             switch (choiceString) {
                 case "sub":
-                    totalTime = (SUB_TIME / 2) + ((SUB_TIME / 2) * amountInt);
+                    totalTime = ((SUB_TIME / 2) + ((SUB_TIME / 2) * amountInt) + 1);
                     break;
                 case "pizza":
-                    totalTime = (PIZZA_TIME / 2) + ((PIZZA_TIME / 2) * amountInt);
+                    totalTime = ((PIZZA_TIME / 2) + ((PIZZA_TIME / 2) * amountInt)+ 1);
                     break;
                 case "soup":
-                    totalTime = (SOUP_TIME / 2) + ((SOUP_TIME / 2) * amountInt);
+                    totalTime = ((SOUP_TIME / 2) + ((SOUP_TIME / 2) * amountInt) + 1);
                     break;
                 default:
                     System.out.println("Invalid input.");
