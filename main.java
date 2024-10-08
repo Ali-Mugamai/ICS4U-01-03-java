@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class MicrowaveTimeCalculator {
-    public static void main(String[] args) {
+        public static void main(String[] args) {{
         // Constants
         final int SUB_TIME = 60;
         final int PIZZA_TIME = 45;
@@ -47,4 +47,5 @@ public class MicrowaveTimeCalculator {
         System.out.println("\nDone.");
         scanner.close();
     }
+}
 }
