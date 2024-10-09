@@ -1,3 +1,9 @@
+// This code shows how long you will need to micowave food
+// created by: Ali Mugamai
+// version: 01
+// date created: Oct 5 2024
+
+
 import java.util.Scanner;
 
 public class main {
