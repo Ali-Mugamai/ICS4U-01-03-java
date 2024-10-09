@@ -6,7 +6,7 @@ public class main {
         final int SUB_TIME = 60;
         final int PIZZA_TIME = 45;
         final int SOUP_TIME = 105;
-        int totalTime = 1;
+        int totalTime = 0;
         // Input
         Scanner scanner = new Scanner(System.in);
         System.out.print("Are you heating sub, pizza, or soup? (lowercase): ");
@@ -22,17 +22,17 @@ public class main {
         }
         if (amountInt < 0 || amountInt > 3) {
             System.out.println("Invalid input.");
-        } else {
+        } else { 
             // Process
             switch (choiceString) {
                 case "sub":
-                    totalTime = ((SUB_TIME / 2) + ((SUB_TIME / 2) * amountInt) + 1);
+                    totalTime = (SUB_TIME * amountInt);
                     break;
                 case "pizza":
-                    totalTime = ((PIZZA_TIME / 2) + ((PIZZA_TIME / 2) * amountInt)+ 1);
+                    totalTime = (PIZZA_TIME * amountInt);
                     break;
                 case "soup":
-                    totalTime = ((SOUP_TIME / 2) + ((SOUP_TIME / 2) * amountInt) + 1);
+                    totalTime = (SOUP_TIME  * amountInt);
                     break;
                 default:
                     System.out.println("Invalid input.");
